@@ -1,0 +1,15 @@
+// Grids sass
+
+$gridColumns: 8
+
+.grid__row
+  // removes the couple pixel white-space between inline-block elements
+  font-size: 0
+
+.grid__col
+  @extend .fontSize--base
+  display: inline-block
+
+@for $i from 1 through $gridColumns
+  .grid__col--#{$i}
+    width: percentage($i / $gridColumns)

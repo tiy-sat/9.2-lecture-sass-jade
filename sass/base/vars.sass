@@ -1,0 +1,10 @@
+// Variables sass
+
+$sizesList: (base: 1.4, deca: 4.8, hecto: 5.2, kilo: 6.4, mega: 7.2)
+
+
+$heading--color: rgba(255, 0, 0, 1)
+
+@each $size, $value in $sizesList
+  .fontSize--#{$size}
+    font-size: #{$value}rem

@@ -1,0 +1,17 @@
+{
+  "name": "9.2-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "",
+    "build-sass": "node-sass sass/main.sass styles/main.css",
+    "watch-sass": "node-sass sass/main.sass styles/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jade": "^1.11.0",
+    "node-sass": "^3.10.0"
+  }
+}
